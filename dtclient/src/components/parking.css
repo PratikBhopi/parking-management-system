@@ -1,0 +1,24 @@
+/* .bookedSlot{
+    background-color: #858589;
+    color: white;
+} */
+.slots{
+    /* w-[70px] h-[70px] border border-black flex justify-center items-center rounded-[5px] */
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(145, 145, 145);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.slots:hover{
+    background-color: #93939847;
+}
+
+@media only screen and (max-width:700px) {
+    .slotSize{
+        width: 50px;
+        height: 50px;
+    }
+}
