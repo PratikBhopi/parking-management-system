@@ -20,7 +20,7 @@ async function sendEmail(recipientEmail,slotNo, vehicleNo,fromTime,toTime) {
 
   // Set up email data
   let mailOptions = {
-    from: '"Parking-Mangement-System" pratikoff16@gmail.com ', // Sender address
+    from: '"Parking-Mangement-System" process.env.EMAIL ', // Sender address
     to: recipientEmail, // List of receivers
     subject: 'Slot Booked!', // Subject line
     text: `Your slot at ${slotNo} has been booked! Your Vehicle No. is ${vehicleNo}`, // Plain text body
